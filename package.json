@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "start": "nodemon",
-    "lint": ""
+    "lint": "",
+    "serve": "pm2 start app.js --name node-server"
   },
   "author": "",
   "license": "ISC",

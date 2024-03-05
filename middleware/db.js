@@ -3,10 +3,10 @@ let mysql = require('mysql');
 
 
 let connection = mysql.createPool({
-    host     : 'subdomain.localhost',
-    user     : 'root',
-    password : '',
-    database : 'akihvfyj_shifter',
+    host     : process.env['DB_HOST'],
+    user     : process.env['DB_USER'],
+    password : process.env['DB_PASSWORD'],
+    database : process.env['DB_DATABASE'],
     connectionLimit : 100,
     charset: 'utf8mb4'
   });
